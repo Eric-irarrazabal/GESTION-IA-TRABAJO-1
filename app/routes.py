@@ -43,7 +43,7 @@ def db_test():
         return jsonify({
             "code": 200,
             "message": "Conexión a Supabase/PostgreSQL exitosa",
-            "database_time": result["server_time"]
+            "database_time": str(result["server_time"])
         })
 
     except Exception as e:
